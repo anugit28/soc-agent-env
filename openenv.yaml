@@ -1,0 +1,19 @@
+# openenv.yaml
+name: cybersecurity-soc-env
+version: 1.0.0
+description: A simulated Security Operations Center where the agent mitigates cyber threats.
+
+environment:
+  # This points the framework to the SOCEnvironment class inside soc_environment/env.py
+  entry_point: soc_environment.env:SOCEnvironment
+
+spaces:
+  observation:
+    # Points to your Pydantic observation model
+    model: soc_environment.models:SystemState
+  action:
+    # Points to your Pydantic action models
+    models:
+      - soc_environment.models:BlockIP
+      - soc_environment.models:UnblockIP
+      - soc_environment.models:KillProcess
