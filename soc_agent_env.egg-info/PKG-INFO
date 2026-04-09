@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: soc-agent-env
+Version: 1.0.0
+Summary: A simulated Security Operations Center for AI Agents
+Author: Hackathon Team
+Requires-Dist: pydantic
+Requires-Dist: openai
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: openenv-core>=0.2.0
+Requires-Dist: httpx==0.27.2
